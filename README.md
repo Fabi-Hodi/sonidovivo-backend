@@ -93,13 +93,20 @@ El `.env` tiene las claves y no se sube a GitHub. Al iniciar se crean las tablas
 
 ## Estado
 
-| Funcionalidad | Estado | Probado |
-|---|---|---|
-| Tabla de usuarios en PostgreSQL | Listo | 18-11-2026 |
-| Inicio de sesión con JWT | Listo | 18-11-2026 |
-| Registro | Listo | 18-11-2026 |
-| Modificar usuario | Listo | 18-11-2026 |
-| Listar usuarios | Listo | 18-11-2026 |
-| Eliminar (desactivar) usuario | Listo | 18-11-2026 |
-| Cambio de rol | En avance | Falta probar |
-| Rutas protegidas (401/403) | En avance | 403 probado, falta 401 sin token |
+## Estado
+
+| Funcionalidad | Diseñado | Implementado | Probado |
+|---|---|---|---|
+| Tabla de usuarios en PostgreSQL (RDS) | Sí | Sí | Sí (18-11-2026) |
+| Inicio de sesión con JWT | Sí | Sí | Sí (18-11-2026) |
+| Registro con rol Cliente asignado por el servidor | Sí | Sí | Sí (18-11-2026) |
+| Listar usuarios (solo Administrador) | Sí | Sí | Sí (18-11-2026) |
+| Modificar usuario | Sí | Sí | Sí (18-11-2026) |
+| Eliminar (desactivar) usuario | Sí | Sí | Sí (18-11-2026) |
+| Swagger de usuarios y autenticación | Sí | Sí | Sí (18-11-2026) |
+| Validación de datos en el servidor (400) | Sí | Sí | Sí (20-11-2026) |
+| Cambio de rol solo por el Administrador | Sí | Sí | Sí (20-11-2026) |
+| 401 sin token o con token alterado | Sí | Sí | Sí (20-11-2026) |
+| 401 con token vencido | Sí | Sí | No |
+| 403 por rol insuficiente o cuenta de otro usuario | Sí | Sí | Sí (20-11-2026) |
+| Login y registro desde el frontend | NO | No | No |
