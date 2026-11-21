@@ -3,9 +3,9 @@
 Backend de Sonido Vivo, tienda online de instrumentos musicales. DSY1104 Desarrollo Fullstack II.
 
 - **Integrantes:** Fabián Muñoz, Jonathan Pozo
-- **Sección:** (completar)
-- **Frontend:** (pegar enlace)
-- **Swagger:** http://3.87.120.220:8080/swagger-ui.html (la IP cambia al reiniciar el laboratorio de AWS)
+- **Sección:** DSY1104-005D
+- **Frontend:** https://github.com/Fabi-Hodi/sonidoVivoV2
+- **Swagger:** http://54.88.227.204:8080/swagger-ui.html (la IP cambia al reiniciar el laboratorio de AWS)
 - **Diagramas (modelo de datos y flujo de login):** (pegar enlace de Drive)
 
 ## Tecnologías
@@ -71,7 +71,7 @@ Para probar en Swagger: hacer login, copiar el `accessToken`, presionar **Author
 En la EC2:
 
 ```bash
-git clone URL_DEL_REPOSITORIO
+git clone https://github.com/Fabi-Hodi/sonidovivo-backend.git
 cd sonidovivo-backend
 cp .env.example .env      # completar con los datos del RDS
 ./mvnw clean package -DskipTests
@@ -91,7 +91,6 @@ El `.env` tiene las claves y no se sube a GitHub. Al iniciar se crean las tablas
 - Spring Security: https://docs.spring.io/spring-security/reference/
 - JWT (RFC 7519): https://datatracker.ietf.org/doc/html/rfc7519
 
-## Estado
 
 ## Estado
 
@@ -109,4 +108,4 @@ El `.env` tiene las claves y no se sube a GitHub. Al iniciar se crean las tablas
 | 401 sin token o con token alterado | Sí | Sí | Sí (20-11-2026) |
 | 401 con token vencido | Sí | Sí | No |
 | 403 por rol insuficiente o cuenta de otro usuario | Sí | Sí | Sí (20-11-2026) |
-| Login y registro desde el frontend | NO | No | No |
+| Login y registro desde el frontend | Sí | Sí | Sí (21-11-2026) |
