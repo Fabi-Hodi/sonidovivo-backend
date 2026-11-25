@@ -5,7 +5,7 @@ Backend de Sonido Vivo, tienda online de instrumentos musicales. DSY1104 Desarro
 - **Integrantes:** Fabián Muñoz, Jonathan Pozo
 - **Sección:** DSY1104-005D
 - **Frontend:** https://github.com/Fabi-Hodi/sonidoVivoV2
-- **Swagger:** http://54.88.227.204:8080/swagger-ui.html (la IP cambia al reiniciar el laboratorio de AWS)
+- **Swagger:** http://52.73.234.170:8080/swagger-ui.html (IP elástica fija)
 - **Diagramas (modelo de datos y flujo de login):** (pegar enlace de Drive)
 
 ## Tecnologías
